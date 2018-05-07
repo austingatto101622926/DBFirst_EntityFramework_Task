@@ -4,7 +4,7 @@
     [Title] VARCHAR(50) NULL, 
     [Year] INT NULL, 
 
-	[StudentId] NVARCHAR(50),
+	[StudentId] NVARCHAR(50) NULL,
 	[AuthorId] VARCHAR(5) NOT NULL,
 
     CONSTRAINT [FK_Book_Student] FOREIGN KEY ([StudentId]) REFERENCES [Student]([StudentId]),
